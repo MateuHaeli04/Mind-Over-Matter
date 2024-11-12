@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Mind Over Matter</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo transparent.jfif" class="logo"> 
+                <ul>
+                    <li><a href="Mindom Website.html">HOME</a></li>
+                    <li><a href="what.html">WHAT?</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Chatbox.html">ChatBox</a></li>
+                    <li><a href="#">Contact Info</a></li>
+                </ul>
+                
+            </div>
+            <div class="content">
+                <h1>MIND OVER MATTTER</h1>
+                <p>Don't let anxiety affect you.<br> We are here for you. It's okay to not be okay,
+                    You are more than your worries. <br> Free ways to relieve your mind.</p>
+                <div>
+                    <button type="submit" class="btn" onclick="openPopup()"><span></span>START FREE<br>TRIAL</button>
+                    <button class="submit" onclick="openPopup()"><span></span>SUBSCRIBE<br>0.99$</button>
+                    <div class="popup"id="popup">
+                        <img src="logo transparent.jfif">
+                        <form action="">
+                            <h2>Sign Up</h2>
+                            <div class="input-box">
+                                <p>Username</p>
+                                <input type="text" placeholder="ex.Kaleb04" required>
+                                <i class="bx bxs-user"></i>
+                            </div>
+                            <div class="input-box">
+                                <p>Password</p>
+                                <input type="password" placeholder="ex.password" required>
+                                <i class="bx bxs-lock-alt"></i>
+                            </div>
+
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">Remember me</label>
+                                <button type="submit" class="btn"><span></span>Register</button>
+                            </div>
+
+                            <div onclick="closePopup()" href="Mindom Website.html">Not Now</div> 
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <script>
+        let popup = document.getElementById("popup");
+        
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+        </script>
+    </body>
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x"></i></a>
+                <a href=""><i class="fa-brands fa-google"></i></a>
+                <a href=""><i class="fa-brands fa-reddit"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="Mindom Website.html">HOME</a></li>
+                    <li><a href="what.html">WHAT?</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Chatbox.html">ChatBox</a></li>
+                    <li><a href="#Contact Info">Contact Info</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2024; Designed by <span class="designer">KalebDoscope</span></p>
+        </div>
+    </footer>
+</html>
